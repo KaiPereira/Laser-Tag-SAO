@@ -4,6 +4,9 @@
 	(generator_version "10.0")
 	(uuid "bd497134-ab55-4d01-915d-3710c30e2e14")
 	(paper "A4")
+	(title_block
+		(title "Laser Tag SAOs")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x03_Odd_Even"
 			(pin_names
@@ -1545,7 +1548,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:SolderJumper_2_Bridged"
+		(symbol "Jumper:Jumper_2_Open"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1554,12 +1557,12 @@
 				(hide yes)
 			)
 			(exclude_from_sim no)
-			(in_bom no)
+			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "JP"
-				(at 0 2.032 0)
+				(at 0 2.794 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1568,8 +1571,8 @@
 					)
 				)
 			)
-			(property "Value" "SolderJumper_2_Bridged"
-				(at 0 -2.54 0)
+			(property "Value" "Jumper_2_Open"
+				(at 0 -2.286 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1590,28 +1593,6 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Solder Jumper, 2-pole, closed/bridged"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "solder jumper SPST"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1622,7 +1603,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SolderJumper*Bridged*"
+			(property "Description" "Jumper, 2-pole, open"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1633,60 +1614,45 @@
 					)
 				)
 			)
-			(symbol "SolderJumper_2_Bridged_0_1"
-				(rectangle
-					(start -0.508 0.508)
-					(end 0.508 -0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
-				(polyline
-					(pts
-						(xy -0.254 1.016) (xy -0.254 -1.016)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
+				)
+			)
+			(symbol "Jumper_2_Open_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
 					(stroke
-						(width 0.1524)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
 					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.016) (xy 0.254 -1.016)
-					)
-					(stroke
-						(width 0.1524)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -1694,10 +1660,24 @@
 					)
 				)
 			)
-			(symbol "SolderJumper_2_Bridged_1_1"
+			(symbol "Jumper_2_Open_0_1"
+				(arc
+					(start -1.524 1.27)
+					(mid 0 1.778)
+					(end 1.524 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_1_1"
 				(pin passive line
 					(at -5.08 0 0)
-					(length 3.81)
+					(length 2.54)
 					(name "A"
 						(effects
 							(font
@@ -1715,7 +1695,7 @@
 				)
 				(pin passive line
 					(at 5.08 0 180)
-					(length 3.81)
+					(length 2.54)
 					(name "B"
 						(effects
 							(font
@@ -4155,6 +4135,85 @@
 		(uuid "e374b0c8-b8fa-44c5-b674-2d057e88a0d7")
 	)
 	(symbol
+		(lib_id "Jumper:Jumper_2_Open")
+		(at 39.37 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "006f1ebd-9311-42de-92d6-22bdd20d5a95")
+		(property "Reference" "JP1"
+			(at 39.37 49.784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Jumper_2_Open"
+			(at 39.37 51.816 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 39.37 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, open"
+			(at 39.37 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8c24ec08-4d2d-4af7-ae93-fd72d2166a18")
+		)
+		(pin "2"
+			(uuid "003192c3-b342-4e14-8b43-0bdd549f2ae2")
+		)
+		(instances
+			(project "laser-tag-sao"
+				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
 		(at 49.53 44.45 0)
 		(unit 1)
@@ -4186,7 +4245,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
 			(at 49.53 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -4358,7 +4417,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Buzzer_Beeper:Buzzer_TDK_PS1240P02BT_D12.2mm_H6.5mm"
 			(at 52.705 80.01 90)
 			(hide yes)
 			(show_name no)
@@ -4381,6 +4440,17 @@
 			)
 		)
 		(property "Description" "Buzzer, polarized"
+			(at 53.34 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" "445-2525-1-ND - Cut Tape (CT)"
 			(at 53.34 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -4438,7 +4508,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 243.84 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -4481,85 +4551,6 @@
 			(project "laser-tag-sao"
 				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
 					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Bridged")
-		(at 39.37 46.99 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2924c61a-3658-4730-9001-3f4a97ecfb32")
-		(property "Reference" "JP1"
-			(at 39.116 50.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Bridged Jumper"
-			(at 39.37 53.086 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 39.37 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 39.37 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
-			(at 39.37 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c38bf4fc-6b4b-4345-83ea-02821f16f8d1")
-		)
-		(pin "2"
-			(uuid "01bc08b8-7550-460b-9604-9cfe5cbbde1a")
-		)
-		(instances
-			(project "laser-tag-sao"
-				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
-					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -4675,7 +4666,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 243.84 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -4911,7 +4902,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 243.84 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -4934,6 +4925,17 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 243.84 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" "450-1650-ND"
 			(at 243.84 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -5071,7 +5073,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
 			(at 165.862 68.58 90)
 			(hide yes)
 			(show_name no)
@@ -5094,6 +5096,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 167.64 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" "CF12JT10K0TR-ND - Tape & Reel (TR)"
 			(at 167.64 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -5383,7 +5396,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
 			(at 236.22 93.218 90)
 			(hide yes)
 			(show_name no)
@@ -5407,6 +5420,17 @@
 		)
 		(property "Description" "Resistor"
 			(at 236.22 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" "CF12JT1K00TR-ND - Tape & Reel (TR)"
+			(at 236.22 91.44 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5618,7 +5642,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 250.19 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -5849,6 +5873,85 @@
 			(project "laser-tag-sao"
 				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Open")
+		(at 62.23 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9351f174-4305-4e90-a263-0790512a1296")
+		(property "Reference" "JP2"
+			(at 62.23 49.784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Jumper_2_Open"
+			(at 62.23 51.816 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 62.23 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, open"
+			(at 62.23 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0289cda1-726a-4aa5-885c-ca4d6956e523")
+		)
+		(pin "2"
+			(uuid "41aa5097-f718-4e0b-bd2c-27011d3baf57")
+		)
+		(instances
+			(project "laser-tag-sao"
+				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -6455,7 +6558,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
 			(at 248.412 69.85 90)
 			(hide yes)
 			(show_name no)
@@ -6478,6 +6581,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 250.19 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" "445-173132-1-ND - Cut Tape (CT)"
 			(at 250.19 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6738,85 +6852,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_2_Bridged")
-		(at 62.23 46.99 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d6f6c3a7-8307-42f4-92d6-bdb7cfd2ead3")
-		(property "Reference" "JP2"
-			(at 61.976 50.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Bridged Jumper"
-			(at 62.23 53.086 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 62.23 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
-			(at 62.23 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "88750c4a-4dae-4a17-a0c6-6aaa5336448f")
-		)
-		(pin "2"
-			(uuid "6b35024b-357b-4051-b525-1c2c48680e00")
-		)
-		(instances
-			(project "laser-tag-sao"
-				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
-					(reference "JP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 180.34 54.61 0)
 		(unit 1)
@@ -6928,7 +6963,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
 			(at 181.3052 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -6951,6 +6986,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 180.34 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" "445-173132-1-ND - Cut Tape (CT)"
 			(at 180.34 48.26 0)
 			(hide yes)
 			(show_name no)
