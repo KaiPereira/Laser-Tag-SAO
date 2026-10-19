@@ -3316,16 +3316,6 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 33.02) (xy 227.33 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c2bc4c1-39f1-4e55-824f-2b5354a6399c")
-	)
-	(wire
-		(pts
 			(xy 157.48 69.85) (xy 144.78 69.85)
 		)
 		(stroke
@@ -3506,7 +3496,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 38.1) (xy 237.49 38.1)
+			(xy 222.25 38.1) (xy 236.22 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3593,6 +3583,16 @@
 			(type default)
 		)
 		(uuid "79c74cd2-bee1-4473-bc10-434a0eea15b9")
+	)
+	(wire
+		(pts
+			(xy 234.95 30.48) (xy 234.95 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a89ee72-b315-4a03-ae0b-68d14c5c43b1")
 	)
 	(wire
 		(pts
@@ -3726,7 +3726,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 43.18) (xy 236.22 45.72)
+			(xy 234.95 43.18) (xy 234.95 45.72)
 		)
 		(stroke
 			(width 0)
@@ -3773,6 +3773,16 @@
 			(type default)
 		)
 		(uuid "c24dd832-158c-4200-be91-61962282baed")
+	)
+	(wire
+		(pts
+			(xy 234.95 33.02) (xy 236.22 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c383bf9a-c905-42e7-9832-ec8cbeb6f89e")
 	)
 	(wire
 		(pts
@@ -3826,7 +3836,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 43.18) (xy 236.22 43.18)
+			(xy 236.22 43.18) (xy 234.95 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3883,16 +3893,6 @@
 			(type default)
 		)
 		(uuid "f67f6619-8cbe-462e-9ee9-21bcdd51e9a7")
-	)
-	(wire
-		(pts
-			(xy 234.95 33.02) (xy 237.49 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fbccf294-825d-4938-b6a0-3ae433b972fc")
 	)
 	(wire
 		(pts
@@ -3995,7 +3995,7 @@
 		(uuid "5b61749f-3ca4-415a-ba8b-9ecfd70e64d1")
 	)
 	(label "IR_RX"
-		(at 223.52 38.1 0)
+		(at 222.25 38.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5433,7 +5433,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 223.52 33.02 0)
+		(at 234.95 30.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5444,7 +5444,7 @@
 		(fields_autoplaced yes)
 		(uuid "7a282745-ce89-4c52-a331-b81e04731fa9")
 		(property "Reference" "#PWR017"
-			(at 223.52 36.83 0)
+			(at 234.95 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5455,7 +5455,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 223.52 27.94 0)
+			(at 234.95 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5465,7 +5465,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 223.52 33.02 0)
+			(at 234.95 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5476,7 +5476,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 33.02 0)
+			(at 234.95 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5487,7 +5487,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 223.52 33.02 0)
+			(at 234.95 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5504,86 +5504,6 @@
 			(project "laser-tag-sao"
 				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
 					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 231.14 33.02 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7e2ae3c9-e340-493b-8992-d8b239053a53")
-		(property "Reference" "R3"
-			(at 231.14 26.67 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 231.14 29.21 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 231.14 34.798 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 231.14 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 231.14 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "59341015-38a8-429c-b9bd-bec9bab58b30")
-		)
-		(pin "1"
-			(uuid "ee7e3c4a-cb7f-4ded-bb6f-3106e31b6f2a")
-		)
-		(instances
-			(project "laser-tag-sao"
-				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
-					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -6035,7 +5955,7 @@
 	)
 	(symbol
 		(lib_id "Interface_Optical:TSOP384xx")
-		(at 247.65 38.1 0)
+		(at 246.38 38.1 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -6046,7 +5966,7 @@
 		(dnp no)
 		(uuid "a0d7237c-ae37-4b14-b52e-b59b13035a3b")
 		(property "Reference" "U2"
-			(at 260.35 39.3701 0)
+			(at 259.08 39.3701 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6057,7 +5977,7 @@
 			)
 		)
 		(property "Value" "TSOP38438"
-			(at 260.35 36.8301 0)
+			(at 259.08 36.8301 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6068,7 +5988,7 @@
 			)
 		)
 		(property "Footprint" "OptoDevice:Vishay_MINICAST-3Pin"
-			(at 248.92 47.625 0)
+			(at 247.65 47.625 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6079,7 +5999,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/82491/tsop382.pdf"
-			(at 231.14 30.48 0)
+			(at 229.87 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6090,7 +6010,7 @@
 			)
 		)
 		(property "Description" "Photo Modules for PCM Remote Control Systems"
-			(at 247.65 38.1 0)
+			(at 246.38 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6198,7 +6118,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 236.22 45.72 0)
+		(at 234.95 45.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6209,7 +6129,7 @@
 		(fields_autoplaced yes)
 		(uuid "b5068817-b5a4-486d-8101-ad1eafd4c4ef")
 		(property "Reference" "#PWR07"
-			(at 236.22 52.07 0)
+			(at 234.95 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6220,7 +6140,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 236.22 50.8 0)
+			(at 234.95 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6230,7 +6150,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 236.22 45.72 0)
+			(at 234.95 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6241,7 +6161,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.22 45.72 0)
+			(at 234.95 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6252,7 +6172,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 236.22 45.72 0)
+			(at 234.95 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
