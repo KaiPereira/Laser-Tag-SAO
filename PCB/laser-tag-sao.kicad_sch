@@ -1898,6 +1898,170 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Transistor_BJT:PN2222A"
 			(pin_names
 				(offset 0)
@@ -2707,7 +2871,7 @@
 	)
 	(text "Singular MCC for decoupling \nfor the whole board"
 		(exclude_from_sim no)
-		(at 178.562 32.512 0)
+		(at 179.832 29.972 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2775,6 +2939,26 @@
 		)
 		(uuid "46e82c03-9cfe-419f-aa63-828c8d632627")
 	)
+	(text_box "Buttons"
+		(exclude_from_sim no)
+		(at 208.28 118.11 0)
+		(size 69.85 45.72)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "575afdf9-eadc-46ed-a334-425fc1a64dad")
+	)
 	(text_box "SAO Connector"
 		(exclude_from_sim no)
 		(at 17.78 17.78 0)
@@ -2816,10 +3000,22 @@
 		(uuid "dec69929-efba-4354-aac5-915a0956034e")
 	)
 	(junction
+		(at 264.16 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02dac4b1-3efc-42f1-a28c-c2ef1536ddb0")
+	)
+	(junction
 		(at 173.99 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4ccfd215-32cd-41d2-8f2c-e6ac4695cf55")
+	)
+	(junction
+		(at 264.16 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6cd9ce50-aeef-4fb1-bb67-e8bb07a45bb9")
 	)
 	(junction
 		(at 143.51 134.62)
@@ -2838,6 +3034,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cc2a7398-cfcb-4d63-93b9-9488b1d52a70")
+	)
+	(junction
+		(at 167.64 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ceab37d6-1b97-4475-b69b-4552b9bd4f3b")
 	)
 	(no_connect
 		(at 182.88 124.46)
@@ -2865,13 +3067,23 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 74.93) (xy 144.78 74.93)
+			(xy 180.34 74.93) (xy 167.64 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "02e025fb-ba4c-4ec9-8275-20dcc7a96516")
+	)
+	(wire
+		(pts
+			(xy 167.64 72.39) (xy 167.64 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "047d879a-b752-4b75-87ce-bb2daabe2cfe")
 	)
 	(wire
 		(pts
@@ -2925,6 +3137,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 69.85) (xy 144.78 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f394f7f-7a77-45e1-8140-2f306bfad866")
+	)
+	(wire
+		(pts
 			(xy 71.12 41.91) (xy 54.61 41.91)
 		)
 		(stroke
@@ -2952,6 +3174,16 @@
 			(type default)
 		)
 		(uuid "29b919f4-da67-4c69-8ef4-d0eaaade4ec7")
+	)
+	(wire
+		(pts
+			(xy 238.76 140.97) (xy 224.79 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2adee91d-9cb0-48ae-9ee3-d4778f3a4c1d")
 	)
 	(wire
 		(pts
@@ -3005,7 +3237,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 46.99) (xy 179.07 44.45)
+			(xy 180.34 44.45) (xy 180.34 41.91)
 		)
 		(stroke
 			(width 0)
@@ -3035,7 +3267,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 57.15) (xy 179.07 54.61)
+			(xy 180.34 54.61) (xy 180.34 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3115,6 +3347,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 49.53) (xy 144.78 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b80a8a7-f43c-4fee-9d5b-cb7457646cc9")
+	)
+	(wire
+		(pts
 			(xy 113.03 114.3) (xy 113.03 115.57)
 		)
 		(stroke
@@ -3122,6 +3364,16 @@
 			(type default)
 		)
 		(uuid "6de9a1f1-c2d9-4423-a7b9-305406b43e92")
+	)
+	(wire
+		(pts
+			(xy 264.16 128.27) (xy 264.16 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70bf3c4b-533f-4b5d-a198-c1f5bea34a77")
 	)
 	(wire
 		(pts
@@ -3165,6 +3417,26 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 62.23) (xy 167.64 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88df6dfc-adc7-4e45-8f2d-ee2b02698783")
+	)
+	(wire
+		(pts
+			(xy 157.48 52.07) (xy 144.78 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89e737d2-3965-4e5c-a87c-ce9e78c6d2c4")
+	)
+	(wire
+		(pts
 			(xy 240.03 91.44) (xy 242.57 91.44)
 		)
 		(stroke
@@ -3185,6 +3457,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 140.97) (xy 264.16 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a210fdb1-f0d4-4749-b375-5617196632f5")
+	)
+	(wire
+		(pts
 			(xy 129.54 82.55) (xy 129.54 85.09)
 		)
 		(stroke
@@ -3195,6 +3477,16 @@
 	)
 	(wire
 		(pts
+			(xy 264.16 153.67) (xy 264.16 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7e30461-62a8-44f6-8b89-ef6af4ad0fa0")
+	)
+	(wire
+		(pts
 			(xy 143.51 134.62) (xy 173.99 134.62)
 		)
 		(stroke
@@ -3202,6 +3494,16 @@
 			(type default)
 		)
 		(uuid "a986c434-9d93-4425-a91f-d496ee6e38f9")
+	)
+	(wire
+		(pts
+			(xy 264.16 140.97) (xy 264.16 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad019e9f-4ec1-495e-9782-47a0ec1bdc56")
 	)
 	(wire
 		(pts
@@ -3232,6 +3534,16 @@
 			(type default)
 		)
 		(uuid "bd24a549-0399-4987-b37c-7d6e2d173fe2")
+	)
+	(wire
+		(pts
+			(xy 238.76 128.27) (xy 224.79 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdcc8b92-c25c-4e07-a409-3d9399fe614c")
 	)
 	(wire
 		(pts
@@ -3305,6 +3617,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 153.67) (xy 264.16 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dada4d82-b2c4-49c7-9103-81ca79d5f2ab")
+	)
+	(wire
+		(pts
 			(xy 64.77 44.45) (xy 54.61 44.45)
 		)
 		(stroke
@@ -3335,6 +3657,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 153.67) (xy 224.79 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eec3cb24-9e2a-4a0f-bbc8-f549a509f905")
+	)
+	(wire
+		(pts
 			(xy 144.78 59.69) (xy 157.48 59.69)
 		)
 		(stroke
@@ -3355,6 +3687,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 74.93) (xy 144.78 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f67f6619-8cbe-462e-9ee9-21bcdd51e9a7")
+	)
+	(wire
+		(pts
 			(xy 234.95 33.02) (xy 237.49 33.02)
 		)
 		(stroke
@@ -3362,6 +3704,16 @@
 			(type default)
 		)
 		(uuid "fbccf294-825d-4938-b6a0-3ae433b972fc")
+	)
+	(wire
+		(pts
+			(xy 248.92 128.27) (xy 264.16 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd5b7333-4d4d-4c97-b1b4-daf008afcb11")
 	)
 	(label "MISO{slash}IR_TX"
 		(at 217.17 91.44 0)
@@ -3373,6 +3725,16 @@
 		)
 		(uuid "0095ceee-b6bf-4559-93b4-5ad930daf4ff")
 	)
+	(label "PUSH2"
+		(at 224.79 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "05ddbb75-fc3d-489b-9c19-5831b3a9f3e0")
+	)
 	(label "OLED_SCL"
 		(at 157.48 46.99 180)
 		(effects
@@ -3382,6 +3744,16 @@
 			(justify right bottom)
 		)
 		(uuid "1061446f-d670-4352-a03f-6553702da0b0")
+	)
+	(label "PUSH1"
+		(at 224.79 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "348eb003-2219-46ac-808e-5856fa1ac17d")
 	)
 	(label "OLED_SCL"
 		(at 33.02 116.84 0)
@@ -3443,6 +3815,16 @@
 		)
 		(uuid "5b6297c1-4ef0-4806-840b-862a1bb88bf6")
 	)
+	(label "PUSH3"
+		(at 157.48 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "684eb1b4-8e2b-40dd-8079-21985ba53274")
+	)
 	(label "MOSI{slash}SDA"
 		(at 30.48 44.45 0)
 		(effects
@@ -3482,6 +3864,16 @@
 			(justify right bottom)
 		)
 		(uuid "80914e26-bfe2-4094-a7f5-26402d1f7a6c")
+	)
+	(label "PUSH1"
+		(at 157.48 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8c39be43-a13c-42cb-8022-57d2b67197e8")
 	)
 	(label "OLED_SDA"
 		(at 33.02 121.92 0)
@@ -3523,6 +3915,16 @@
 		)
 		(uuid "d2801901-86ed-4595-8633-3717693c57e5")
 	)
+	(label "PUSH3"
+		(at 224.79 153.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d9a1033b-95c9-4387-a0b1-1aaa60dcc944")
+	)
 	(label "OLED_SDA"
 		(at 157.48 44.45 180)
 		(effects
@@ -3544,7 +3946,7 @@
 		(uuid "e0c6c444-00c4-4c70-b271-934bb443a3df")
 	)
 	(label "RESET"
-		(at 157.48 74.93 180)
+		(at 180.34 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3552,6 +3954,16 @@
 			(justify right bottom)
 		)
 		(uuid "e26b4359-0200-42fb-85e6-1650bb06d004")
+	)
+	(label "PUSH2"
+		(at 157.48 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e374b0c8-b8fa-44c5-b674-2d057e88a0d7")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3806,6 +4218,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 243.84 140.97 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f850fb4-29f2-44a3-bbfa-737eeea53c56")
+		(property "Reference" "SW2"
+			(at 243.84 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 243.84 135.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 243.84 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 243.84 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9dc2188d-71be-4af4-a859-166fe94ad6a4")
+		)
+		(pin "2"
+			(uuid "6d9a3866-bce7-4dd0-9483-c7f512f332ac")
+		)
+		(instances
+			(project "laser-tag-sao"
+				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 30.48 41.91 0)
 		(unit 1)
@@ -3956,6 +4448,86 @@
 			(project "laser-tag-sao"
 				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 243.84 153.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "32a19ff3-dc40-45da-9493-52b8d367686a")
+		(property "Reference" "SW3"
+			(at 243.84 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 243.84 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 243.84 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 243.84 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ec9bbd46-4f62-45ee-9041-747b02a32dea")
+		)
+		(pin "2"
+			(uuid "23a16c79-52cb-4edb-ab18-6f1432315fb2")
+		)
+		(instances
+			(project "laser-tag-sao"
+				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -4118,6 +4690,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 243.84 128.27 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "60d15296-3750-4634-9c17-123ed12b7b12")
+		(property "Reference" "SW1"
+			(at 243.84 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 243.84 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 243.84 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 243.84 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a5f6bece-facb-4b7c-9e81-048ff0664d88")
+		)
+		(pin "2"
+			(uuid "060b96d6-8148-47ee-9cc8-57103d45bcaf")
+		)
+		(instances
+			(project "laser-tag-sao"
+				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 173.99 137.16 0)
 		(unit 1)
@@ -4190,6 +4842,88 @@
 			(project "laser-tag-sao"
 				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 167.64 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70e2ef05-96e6-4ffb-9b72-1756178ae832")
+		(property "Reference" "R4"
+			(at 170.18 67.3099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 170.18 69.8499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.862 68.58 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 167.64 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c2a3b1cd-f6da-414f-a8ac-c27676d3b162")
+		)
+		(pin "1"
+			(uuid "57a65a4c-0807-40bf-aeb2-24472c0e4533")
+		)
+		(instances
+			(project "laser-tag-sao"
+				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -5119,6 +5853,84 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 264.16 156.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aeb1c556-1f79-4c9c-9d24-7749963b81dc")
+		(property "Reference" "#PWR01"
+			(at 264.16 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 264.16 161.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 264.16 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 264.16 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 264.16 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "24e3a8e3-fc77-4190-b025-e7beb85cc675")
+		)
+		(instances
+			(project "laser-tag-sao"
+				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 236.22 45.72 0)
 		(unit 1)
 		(body_style 1)
@@ -5551,7 +6363,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 179.07 44.45 0)
+		(at 180.34 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5562,7 +6374,7 @@
 		(fields_autoplaced yes)
 		(uuid "cc67c191-4398-45bf-ba32-eb31d775c7dd")
 		(property "Reference" "#PWR018"
-			(at 179.07 48.26 0)
+			(at 180.34 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5573,7 +6385,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 179.07 39.37 0)
+			(at 180.34 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5583,7 +6395,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 44.45 0)
+			(at 180.34 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5594,7 +6406,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 44.45 0)
+			(at 180.34 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5605,7 +6417,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 179.07 44.45 0)
+			(at 180.34 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5707,7 +6519,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 179.07 57.15 0)
+		(at 180.34 54.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5718,7 +6530,7 @@
 		(fields_autoplaced yes)
 		(uuid "df0de88f-1781-4037-8ebf-5c8e9ac4fdfd")
 		(property "Reference" "#PWR010"
-			(at 179.07 63.5 0)
+			(at 180.34 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5729,7 +6541,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 179.07 62.23 0)
+			(at 180.34 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5739,7 +6551,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 57.15 0)
+			(at 180.34 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5750,7 +6562,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 57.15 0)
+			(at 180.34 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5761,7 +6573,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 179.07 57.15 0)
+			(at 180.34 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5785,7 +6597,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 179.07 50.8 0)
+		(at 180.34 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5796,7 +6608,7 @@
 		(fields_autoplaced yes)
 		(uuid "dfa49da5-3002-41fc-86ee-adbab8e526df")
 		(property "Reference" "C1"
-			(at 182.88 49.5299 0)
+			(at 184.15 46.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5807,7 +6619,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 182.88 52.0699 0)
+			(at 184.15 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5818,7 +6630,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.0352 54.61 0)
+			(at 181.3052 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5829,7 +6641,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 50.8 0)
+			(at 180.34 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5840,7 +6652,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 179.07 50.8 0)
+			(at 180.34 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6412,6 +7224,84 @@
 			(project "laser-tag-sao"
 				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 167.64 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f432ede3-f027-426a-a9f1-39438109650a")
+		(property "Reference" "#PWR021"
+			(at 167.64 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 167.64 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 167.64 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bb630b2e-0ace-49d5-8ae1-db463cb1986d")
+		)
+		(instances
+			(project "laser-tag-sao"
+				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
