@@ -3058,7 +3058,7 @@
 		)
 		(uuid "061423cd-4c16-4f89-929a-3bc7f5163674")
 	)
-	(text "Singular MCC for decoupling \nfor the whole board"
+	(text "Singular MLCC for decoupling \nfor the whole board"
 		(exclude_from_sim no)
 		(at 179.832 29.972 0)
 		(effects
@@ -5673,6 +5673,17 @@
 				)
 			)
 		)
+		(property "Digikey Part #" "VSLY5940-ND"
+			(at 250.19 80.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c7dfcbd1-2296-4089-9a93-4c22e67bd4ee")
 		)
@@ -6020,6 +6031,17 @@
 				)
 			)
 		)
+		(property "Digikey Part #" "TSOP38438-ND"
+			(at 246.38 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c7619f22-2617-4b28-b15a-c39f6d9e7115")
 		)
@@ -6217,7 +6239,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "ATtiny84-20P"
+		(property "Value" "ATTINY84A-PU"
 			(at 115.57 60.9599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6252,6 +6274,17 @@
 			)
 		)
 		(property "Description" "20MHz, 8kB Flash, 512B SRAM, 512B EEPROM, debugWIRE, DIP-14"
+			(at 129.54 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" "ATTINY84A-PU-ND"
 			(at 129.54 59.69 0)
 			(hide yes)
 			(show_name no)
