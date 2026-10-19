@@ -423,11 +423,22 @@
     "reuse_designators": true,
     "subpart_first_id": 65,
     "subpart_id_separator": 0,
-    "top_level_sheets": [],
-    "used_designators": "",
+    "top_level_sheets": [
+      {
+        "filename": "laser-tag-sao.kicad_sch",
+        "name": "laser-tag-sao",
+        "uuid": "bd497134-ab55-4d01-915d-3710c30e2e14"
+      }
+    ],
+    "used_designators": "#PWR1-20,BZ1,C1,D1-5,J1,Q1,R1-3,U1-3",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "bd497134-ab55-4d01-915d-3710c30e2e14",
+      "laser-tag-sao"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {
