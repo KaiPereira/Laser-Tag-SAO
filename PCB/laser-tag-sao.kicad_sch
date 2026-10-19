@@ -1545,6 +1545,195 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:SolderJumper_2_Bridged"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Bridged"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Bridged*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Bridged_0_1"
+				(rectangle
+					(start -0.508 0.508)
+					(end 0.508 -0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Bridged_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_Microchip_ATtiny:ATtiny84-20P"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2861,7 +3050,7 @@
 	)
 	(text "SAO connector for both programming and I2C"
 		(exclude_from_sim no)
-		(at 50.038 29.972 0)
+		(at 52.578 29.972 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3147,23 +3336,13 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 41.91) (xy 54.61 41.91)
+			(xy 71.12 41.91) (xy 57.15 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2108fb1d-3a63-4317-9cc5-f0ba117d6589")
-	)
-	(wire
-		(pts
-			(xy 64.77 46.99) (xy 54.61 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "220fe27a-56ce-4522-aa1d-ddad25b1246f")
 	)
 	(wire
 		(pts
@@ -3264,6 +3443,16 @@
 			(type default)
 		)
 		(uuid "52e63229-1e22-464a-b290-eaa552073d9b")
+	)
+	(wire
+		(pts
+			(xy 77.47 46.99) (xy 67.31 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57b78b8d-40c9-424f-9661-493533cc1d79")
 	)
 	(wire
 		(pts
@@ -3467,6 +3656,16 @@
 	)
 	(wire
 		(pts
+			(xy 22.86 46.99) (xy 34.29 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4edd104-5f5a-4b71-9468-04cadbac8b7b")
+	)
+	(wire
+		(pts
 			(xy 129.54 82.55) (xy 129.54 85.09)
 		)
 		(stroke
@@ -3567,7 +3766,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 44.45) (xy 41.91 44.45)
+			(xy 33.02 44.45) (xy 44.45 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3577,17 +3776,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 46.99) (xy 41.91 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdf03d4c-e281-4b5c-8c46-128385fc44ba")
-	)
-	(wire
-		(pts
-			(xy 30.48 41.91) (xy 41.91 41.91)
+			(xy 30.48 41.91) (xy 44.45 41.91)
 		)
 		(stroke
 			(width 0)
@@ -3627,7 +3816,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 44.45) (xy 54.61 44.45)
+			(xy 67.31 44.45) (xy 57.15 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3735,6 +3924,16 @@
 		)
 		(uuid "05ddbb75-fc3d-489b-9c19-5831b3a9f3e0")
 	)
+	(label "MISO{slash}IR_TX"
+		(at 22.86 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "080bad76-ba8e-4038-9d3b-394860c22c92")
+	)
 	(label "OLED_SCL"
 		(at 157.48 46.99 180)
 		(effects
@@ -3785,16 +3984,6 @@
 		)
 		(uuid "419dd65f-df03-4708-bd06-1329e374fa5c")
 	)
-	(label "RESET"
-		(at 64.77 46.99 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "42733304-1811-4464-a4bf-48f55800ba6b")
-	)
 	(label "SCK{slash}SCL"
 		(at 157.48 54.61 180)
 		(effects
@@ -3826,7 +4015,7 @@
 		(uuid "684eb1b4-8e2b-40dd-8079-21985ba53274")
 	)
 	(label "MOSI{slash}SDA"
-		(at 30.48 44.45 0)
+		(at 33.02 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3835,18 +4024,8 @@
 		)
 		(uuid "7076c43e-643c-4823-84f1-3e45af4b3e1c")
 	)
-	(label "MISO{slash}IR_TX"
-		(at 30.48 46.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "75c70f2e-6f3e-4c9f-a908-c2891f5a6f04")
-	)
 	(label "SCK{slash}SCL"
-		(at 64.77 44.45 180)
+		(at 67.31 44.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3874,6 +4053,16 @@
 			(justify right bottom)
 		)
 		(uuid "8c39be43-a13c-42cb-8022-57d2b67197e8")
+	)
+	(label "RESET"
+		(at 77.47 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "980cc8bc-9daf-41ec-9da7-676a09aa8559")
 	)
 	(label "OLED_SDA"
 		(at 33.02 121.92 0)
@@ -3966,86 +4155,8 @@
 		(uuid "e374b0c8-b8fa-44c5-b674-2d057e88a0d7")
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 71.12 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0527c72a-aab5-4892-892f-9c5b2c261d8a")
-		(property "Reference" "#PWR02"
-			(at 71.12 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 71.12 46.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.12 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 71.12 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4f8e8ba4-c0d2-450e-93fd-fb2dd4cfa9ae")
-		)
-		(instances
-			(project "laser-tag-sao"
-				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
-		(at 46.99 44.45 0)
+		(at 49.53 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4056,7 +4167,7 @@
 		(fields_autoplaced yes)
 		(uuid "07bb147d-959d-4741-b8a9-07ac9b0cb4a6")
 		(property "Reference" "J1"
-			(at 48.26 35.56 0)
+			(at 50.8 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4066,7 +4177,7 @@
 			)
 		)
 		(property "Value" "SAO Connector"
-			(at 48.26 38.1 0)
+			(at 50.8 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4076,7 +4187,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 46.99 44.45 0)
+			(at 49.53 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4087,7 +4198,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 44.45 0)
+			(at 49.53 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4098,7 +4209,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 46.99 44.45 0)
+			(at 49.53 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4130,6 +4241,84 @@
 			(project "laser-tag-sao"
 				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 30.48 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c1d3ddd-e6c9-4132-b2ac-bae2f505bfb8")
+		(property "Reference" "#PWR03"
+			(at 30.48 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 30.48 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 30.48 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3d7187e9-198d-449d-94d0-61c95a24f2e9")
+		)
+		(instances
+			(project "laser-tag-sao"
+				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -4298,20 +4487,18 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 30.48 41.91 0)
+		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(at 39.37 46.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "154daa01-05ad-44b2-b6a3-b7d5dbb050f7")
-		(property "Reference" "#PWR020"
-			(at 30.48 45.72 0)
-			(hide yes)
+		(uuid "2924c61a-3658-4730-9001-3f4a97ecfb32")
+		(property "Reference" "JP1"
+			(at 39.116 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4320,8 +4507,8 @@
 				)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 30.48 36.83 0)
+		(property "Value" "Bridged Jumper"
+			(at 39.37 53.086 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4331,7 +4518,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 41.91 0)
+			(at 39.37 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4342,7 +4529,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 41.91 0)
+			(at 39.37 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4352,8 +4539,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 30.48 41.91 0)
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 39.37 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4364,12 +4551,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "b1a42189-bcca-4f1d-960d-18083d63e543")
+			(uuid "c38bf4fc-6b4b-4345-83ea-02821f16f8d1")
+		)
+		(pin "2"
+			(uuid "01bc08b8-7550-460b-9604-9cfe5cbbde1a")
 		)
 		(instances
 			(project "laser-tag-sao"
 				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
-					(reference "#PWR020")
+					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -4870,7 +5060,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 170.18 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5651,6 +5841,83 @@
 			(project "laser-tag-sao"
 				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 71.12 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8e4fa625-c45e-451f-81b5-89dcafbb0ab1")
+		(property "Reference" "#PWR02"
+			(at 71.12 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 74.93 42.926 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7545bdd4-a85b-4849-9064-aa1c893e4d5b")
+		)
+		(instances
+			(project "laser-tag-sao"
+				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -6512,6 +6779,85 @@
 			(project "laser-tag-sao"
 				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(at 62.23 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d6f6c3a7-8307-42f4-92d6-bdb7cfd2ead3")
+		(property "Reference" "JP2"
+			(at 61.976 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Bridged Jumper"
+			(at 62.23 53.086 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 62.23 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 62.23 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "88750c4a-4dae-4a17-a0c6-6aaa5336448f")
+		)
+		(pin "2"
+			(uuid "6b35024b-357b-4051-b525-1c2c48680e00")
+		)
+		(instances
+			(project "laser-tag-sao"
+				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
+					(reference "JP2")
 					(unit 1)
 				)
 			)
