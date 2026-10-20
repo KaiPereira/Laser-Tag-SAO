@@ -3111,7 +3111,7 @@
 	(text_box "Buttons"
 		(exclude_from_sim no)
 		(at 208.28 118.11 0)
-		(size 69.85 45.72)
+		(size 69.85 38.1)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -3179,12 +3179,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4ccfd215-32cd-41d2-8f2c-e6ac4695cf55")
-	)
-	(junction
-		(at 264.16 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6cd9ce50-aeef-4fb1-bb67-e8bb07a45bb9")
 	)
 	(junction
 		(at 143.51 134.62)
@@ -3656,7 +3650,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 153.67) (xy 264.16 156.21)
+			(xy 264.16 140.97) (xy 264.16 146.05)
 		)
 		(stroke
 			(width 0)
@@ -3673,16 +3667,6 @@
 			(type default)
 		)
 		(uuid "a986c434-9d93-4425-a91f-d496ee6e38f9")
-	)
-	(wire
-		(pts
-			(xy 264.16 140.97) (xy 264.16 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad019e9f-4ec1-495e-9782-47a0ec1bdc56")
 	)
 	(wire
 		(pts
@@ -3796,16 +3780,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 153.67) (xy 264.16 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dada4d82-b2c4-49c7-9103-81ca79d5f2ab")
-	)
-	(wire
-		(pts
 			(xy 67.31 44.45) (xy 57.15 44.45)
 		)
 		(stroke
@@ -3833,16 +3807,6 @@
 			(type default)
 		)
 		(uuid "e1c044fc-a7a9-4b20-832e-eb6468dd1333")
-	)
-	(wire
-		(pts
-			(xy 238.76 153.67) (xy 224.79 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eec3cb24-9e2a-4a0f-bbc8-f549a509f905")
 	)
 	(wire
 		(pts
@@ -4083,16 +4047,6 @@
 			(justify right bottom)
 		)
 		(uuid "d2801901-86ed-4595-8633-3717693c57e5")
-	)
-	(label "PUSH3"
-		(at 224.79 153.67 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d9a1033b-95c9-4387-a0b1-1aaa60dcc944")
 	)
 	(label "OLED_SDA"
 		(at 157.48 44.45 180)
@@ -4635,86 +4589,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 243.84 153.67 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "32a19ff3-dc40-45da-9493-52b8d367686a")
-		(property "Reference" "SW3"
-			(at 243.84 146.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 243.84 148.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 243.84 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 243.84 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 243.84 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ec9bbd46-4f62-45ee-9041-747b02a32dea")
-		)
-		(pin "2"
-			(uuid "23a16c79-52cb-4edb-ab18-6f1432315fb2")
-		)
-		(instances
-			(project "laser-tag-sao"
-				(path "/bd497134-ab55-4d01-915d-3710c30e2e14"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 54.61 106.68 0)
 		(unit 1)
@@ -5164,7 +5038,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812B-4020:LED_WS2812B-4020"
+		(property "Footprint" "kai's library:LED_WS2812B-4020"
 			(at 173.99 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -6165,7 +6039,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 264.16 156.21 0)
+		(at 264.16 146.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6176,7 +6050,7 @@
 		(fields_autoplaced yes)
 		(uuid "aeb1c556-1f79-4c9c-9d24-7749963b81dc")
 		(property "Reference" "#PWR01"
-			(at 264.16 162.56 0)
+			(at 264.16 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6187,7 +6061,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 264.16 161.29 0)
+			(at 264.16 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6197,7 +6071,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 264.16 156.21 0)
+			(at 264.16 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6208,7 +6082,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 264.16 156.21 0)
+			(at 264.16 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6219,7 +6093,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 264.16 156.21 0)
+			(at 264.16 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7142,7 +7016,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812B-4020:LED_WS2812B-4020"
+		(property "Footprint" "kai's library:LED_WS2812B-4020"
 			(at 143.51 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -7374,7 +7248,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812B-4020:LED_WS2812B-4020"
+		(property "Footprint" "kai's library:LED_WS2812B-4020"
 			(at 113.03 124.46 0)
 			(hide yes)
 			(show_name no)
