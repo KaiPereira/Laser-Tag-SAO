@@ -5073,7 +5073,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 165.862 68.58 90)
 			(hide yes)
 			(show_name no)
@@ -5106,7 +5106,7 @@
 				)
 			)
 		)
-		(property "Digikey Part #" "CF12JT10K0TR-ND - Tape & Reel (TR)"
+		(property "Digikey Part #" "CF18JT10K0TR-ND - Tape & Reel (TR)"
 			(at 167.64 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -5396,7 +5396,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 236.22 93.218 90)
 			(hide yes)
 			(show_name no)
@@ -5429,7 +5429,7 @@
 				)
 			)
 		)
-		(property "Digikey Part #" "CF12JT1K00TR-ND - Tape & Reel (TR)"
+		(property "Digikey Part #" "CF18JT1K00TR-ND - Tape & Reel (TR)"
 			(at 236.22 91.44 90)
 			(hide yes)
 			(show_name no)
@@ -6558,7 +6558,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 248.412 69.85 90)
 			(hide yes)
 			(show_name no)
@@ -6591,7 +6591,7 @@
 				)
 			)
 		)
-		(property "Digikey Part #" "445-173132-1-ND - Cut Tape (CT)"
+		(property "Digikey Part #" "CF18JT22R0TR-ND - Tape & Reel (TR)"
 			(at 250.19 69.85 0)
 			(hide yes)
 			(show_name no)
