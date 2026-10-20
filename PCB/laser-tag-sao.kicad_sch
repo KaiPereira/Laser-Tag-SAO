@@ -3208,6 +3208,10 @@
 		(at 182.88 124.46)
 		(uuid "4e425c3b-bb1b-4b03-b865-4c9b2d66e96d")
 	)
+	(no_connect
+		(at 144.78 52.07)
+		(uuid "b1f3956a-c981-4aad-9c4d-6e444059eb95")
+	)
 	(wire
 		(pts
 			(xy 250.19 63.5) (xy 250.19 66.04)
@@ -3287,16 +3291,6 @@
 			(type default)
 		)
 		(uuid "18e6fe5c-e352-48a8-851e-7b85277a75e4")
-	)
-	(wire
-		(pts
-			(xy 157.48 69.85) (xy 144.78 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f394f7f-7a77-45e1-8140-2f306bfad866")
 	)
 	(wire
 		(pts
@@ -3590,16 +3584,6 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 52.07) (xy 144.78 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89e737d2-3965-4e5c-a87c-ce9e78c6d2c4")
-	)
-	(wire
-		(pts
 			(xy 240.03 91.44) (xy 242.57 91.44)
 		)
 		(stroke
@@ -3627,6 +3611,16 @@
 			(type default)
 		)
 		(uuid "a210fdb1-f0d4-4749-b375-5617196632f5")
+	)
+	(wire
+		(pts
+			(xy 157.48 69.85) (xy 144.78 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4cdacc9-5a61-41bf-b9f8-a90871441344")
 	)
 	(wire
 		(pts
@@ -3878,6 +3872,16 @@
 		)
 		(uuid "080bad76-ba8e-4038-9d3b-394860c22c92")
 	)
+	(label "PUSH2"
+		(at 157.48 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0903bbf9-68c4-403b-aabc-681d118509a2")
+	)
 	(label "OLED_SCL"
 		(at 157.48 46.99 180)
 		(effects
@@ -3947,16 +3951,6 @@
 			(justify left bottom)
 		)
 		(uuid "5b6297c1-4ef0-4806-840b-862a1bb88bf6")
-	)
-	(label "PUSH3"
-		(at 157.48 69.85 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "684eb1b4-8e2b-40dd-8079-21985ba53274")
 	)
 	(label "MOSI{slash}SDA"
 		(at 33.02 44.45 0)
@@ -4077,16 +4071,6 @@
 			(justify right bottom)
 		)
 		(uuid "e26b4359-0200-42fb-85e6-1650bb06d004")
-	)
-	(label "PUSH2"
-		(at 157.48 52.07 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e374b0c8-b8fa-44c5-b674-2d057e88a0d7")
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
