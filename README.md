@@ -13,3 +13,11 @@ These are little badge add-ons so you can play laser-tag against your friends :D
 - Button to shoot and a button to change modes or other stuff
 - 1 SAO port
 - ATtiny84 DIP 14
+
+## Firmware
+
+You can program the laser tag guns over SPI broken out over the SAO connector:
+- Bridge the jumpers with a soldering iron
+- Set up an Arduino as an ISP (more info coming soon)
+- Connect the Arduino pins to the SAO connector (SPI + power)
+- Upload your code and you're done!
