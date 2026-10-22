@@ -5918,6 +5918,17 @@
 				)
 			)
 		)
+		(property "Digikey Part #" "1514-PN2222APBFREE-ND"
+			(at 247.65 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "34d67314-43cf-4458-87d0-c2dee52bcd53")
 		)

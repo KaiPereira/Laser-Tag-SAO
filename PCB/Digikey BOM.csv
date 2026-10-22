@@ -5,7 +5,7 @@
 "D2,D3,D4","3","WS2812B-4020","","","","","${EXCLUDE_FROM_POS_FILES}","kai's library:LED_WS2812B-4020","",""
 "J1","1","SAO Connector","","","","","${EXCLUDE_FROM_POS_FILES}","Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical","","35-PRPC003DAAN-RC-ND"
 "JP1,JP2","2","Jumper_2_Open","","","","","${EXCLUDE_FROM_POS_FILES}","Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm","",""
-"Q1","1","PN2222A","","","","","${EXCLUDE_FROM_POS_FILES}","Package_TO_SOT_THT:TO-92_Inline","https://www.onsemi.com/pub/Collateral/PN2222-D.PDF",""
+"Q1","1","PN2222A","","","","","${EXCLUDE_FROM_POS_FILES}","Package_TO_SOT_THT:TO-92_Inline","https://www.onsemi.com/pub/Collateral/PN2222-D.PDF","1514-PN2222APBFREE-ND"
 "R1","1","22","","","","","${EXCLUDE_FROM_POS_FILES}","Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal","","CF18JT22R0TR-ND - Tape & Reel (TR)"
 "R2","1","1k","","","","","${EXCLUDE_FROM_POS_FILES}","Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal","","CF18JT1K00TR-ND - Tape & Reel (TR)"
 "R4","1","10k","","","","","${EXCLUDE_FROM_POS_FILES}","Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal","","CF18JT10K0TR-ND - Tape & Reel (TR)"
