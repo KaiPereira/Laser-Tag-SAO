@@ -3,7 +3,7 @@
 "C1","1","10uF","","","","","${EXCLUDE_FROM_POS_FILES}","Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm","","445-173132-1-ND - Cut Tape (CT)"
 "D1","1","VSLY5940","","","","","${EXCLUDE_FROM_POS_FILES}","LED_THT:LED_D5.0mm","","VSLY5940-ND"
 "D2,D3,D4","3","WS2812B-4020","","","","","${EXCLUDE_FROM_POS_FILES}","kai's library:LED_WS2812B-4020","",""
-"J1","1","SAO Connector","","","","","${EXCLUDE_FROM_POS_FILES}","Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical","",""
+"J1","1","SAO Connector","","","","","${EXCLUDE_FROM_POS_FILES}","Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical","","35-PRPC003DAAN-RC-ND"
 "JP1,JP2","2","Jumper_2_Open","","","","","${EXCLUDE_FROM_POS_FILES}","Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm","",""
 "Q1","1","PN2222A","","","","","${EXCLUDE_FROM_POS_FILES}","Package_TO_SOT_THT:TO-92_Inline","https://www.onsemi.com/pub/Collateral/PN2222-D.PDF",""
 "R1","1","22","","","","","${EXCLUDE_FROM_POS_FILES}","Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal","","CF18JT22R0TR-ND - Tape & Reel (TR)"

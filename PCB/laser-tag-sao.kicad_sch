@@ -4216,6 +4216,17 @@
 				)
 			)
 		)
+		(property "Digikey Part #" "35-PRPC003DAAN-RC-ND"
+			(at 49.53 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "81b3e3e7-c448-43ea-941d-c51790d07234")
 		)
